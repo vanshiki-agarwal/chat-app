@@ -1,110 +1,153 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap"); */
+
 .container {
-    max-width: 1100px;
-    margin: 90px auto;
-    overflow: hidden;
-    background-color: #3697eb;
-    font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-    align-items: center;
-        
+  max-width: 1100px;
+  margin: 90px auto;
+  overflow: hidden;
+  background-color: #3697eb;
+  font-family: "Open Sans", "Roboto", sans-serif;
+  font-size: 16px;
+  align-items: center;
 }
 .header {
-	color: #fff;
-	padding: 15px;
-	display: flex;
-	align-items: center;
-    justify-content: space-between;
-	
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .chat-main {
-	display: grid;
-	grid-template-columns: 1fr 3fr;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
 .chat-sidebar {
-	background: #fff;
-	color: #000;
-	padding: 20px 20px 60px;
-	overflow-y: scroll;
+  background: #fff;
+  color: #000;
+  padding: 20px 20px 60px;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-weight: 600;
 }
 
 .chat-sidebar h2 {
-	font-size: 20px;
-	background: #2c90e7;
-	padding: 10px;
-	margin-bottom: 20px;
-}
-.chat-sidebar h3 {
-	margin-bottom: 15px;
-}
-.chat-sidebar ul li {
-	padding: 5px 0;
-}
-.chat-messages {
-	padding: 30px;
-	max-height: 500px;
-	overflow-y: scroll;
-    background-color: #fff;
-    position: relative;
-    
-}
-.chat-messages .message {
-	padding: 10px;
-	margin-bottom: 15px;
-	background-color: rgb(236, 233, 233);
-	border-radius: 5px;
-    box-shadow: 0px 3px 8px 3px rgba(0,0,0,0.66);
-    max-width: 600px;
+  font-size: 20px;
+  padding: 10px;
+  margin: auto;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
+.chat-sidebar ul li {
+  padding: 5px 0;
+}
+.chat-messages {
+  padding: 30px;
+  max-height: 500px;
+  overflow-y: scroll;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.chat-messages .message {
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: rgb(236, 233, 233);
+  border-radius: 5px;
+  box-shadow: 0px 3px 8px 3px rgba(0, 0, 0, 0.66);
+  max-width: 600px;
+}
+.left {
+  float: left;
+  background-color: #2c90e7;
+}
 .right {
-    position: absolute;
-    right: 30px;
+  float: right;
 }
 
 .chat-messages .message .meta {
-	font-size: 15px;
-	font-weight: bold;
-	color: rgb(3, 146, 115);
-	opacity: 0.7;
-	margin-bottom: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(3, 146, 115);
+  opacity: 0.7;
+  margin-bottom: 7px;
 }
 
 .chat-messages .message .metasend {
-	font-size: 15px;
-	font-weight: bold;
-	color: rgb(3, 146, 115);
-	opacity: 0.7;
-	margin-bottom: 7px;
-    float: right;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(3, 146, 115);
+  opacity: 0.7;
+  margin-bottom: 7px;
+  float: right;
 }
 
 .chat-messages .message .meta span {
-	color: rgb(7, 7, 7);
+  color: rgb(7, 7, 7);
 }
 .chat-form-container {
-	padding: 20px 30px;
+  padding: 20px 30px;
 }
 
 .chat-form-container form {
-	display: flex;
+  display: flex;
 }
 
-.chat-form-container input[type='text'] {
-	font-size: 16px;
-	padding: 5px;
-	height: 40px;
-	flex: 1;
-    border-radius: 5px;
+#users {
+  list-style: none;
+  padding-top: 10px;
+}
+
+.chat-form-container input[type="text"] {
+  font-size: 16px;
+  padding: 5px;
+  height: 40px;
+  flex: 1;
+  border-radius: 5px;
 }
 
 .btn {
-	cursor: pointer;
-	padding: 5px 15px;
-	background: #fff;
-	color: #000;
-	border: 0;
-	font-size: 17px;
+  cursor: pointer;
+  padding: 5px 15px;
+  background: #fff;
+  color: #000;
+  border: 0;
+  font-size: 17px;
 }
 
+.avatar {
+  border-radius: 50%;
+  width: 40px;
+}
 
+.user {
+  display: flex;
+}
+
+.username {
+  margin: auto;
+}
+
+.room {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #7f7fd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
