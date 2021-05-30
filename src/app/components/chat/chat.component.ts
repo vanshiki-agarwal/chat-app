@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {
   faEnvelopeOpenText,
-  faUser,
+  faUsers,
   faHouseUser,
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -18,7 +18,7 @@ export class ChatComponent implements OnInit {
   socket: any;
   faEnvelopeOpenText = faEnvelopeOpenText;
   faHouseUser = faHouseUser;
-  faUser = faUser;
+  faUsers = faUsers;
 
   constructor() {}
 
