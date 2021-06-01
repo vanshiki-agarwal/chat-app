@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  faEnvelopeOpenText,
-  faUsers,
-  faHouseUser,
-} from '@fortawesome/free-solid-svg-icons';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogComponent } from '../dialog/dialog.component';
 
 @Component({
   selector: 'app-chat',
@@ -16,11 +13,11 @@ export class ChatComponent implements OnInit {
   messageList: { message: string; userName: string; mine: boolean }[] = [];
   userList: string[] = [];
   socket: any;
-  faEnvelopeOpenText = faEnvelopeOpenText;
-  faHouseUser = faHouseUser;
-  faUsers = faUsers;
+  constructor(public dialog: MatDialog) {}
 
-  constructor() {}
+  openDialog() {
+    this.dialog.open(DialogComponent);
+  }
 
   ngOnInit(): void {}
   userNameUpdate(name: string): void {
